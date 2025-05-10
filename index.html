@@ -1,172 +1,41 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <title>Exercícios em JavaScript</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      padding: 30px;
-      background-color: #f0f0f0;
-    }
-    h1 {
-      text-align: center;
-    }
-    button {
-      display: block;
-      width: 100%;
-      padding: 10px;
-      margin: 10px auto;
-      font-size: 16px;
-      border: none;
-      border-radius: 8px;
-      background-color: #4CAF50;
-      color: white;
-      cursor: pointer;
-      transition: 0.3s;
-    }
-    button:hover {
-      background-color: #45a049;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>João Victor Nenemann</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <div class="interface">
+      <div class="logo">
+        <p>João Victor</p>
+      </div> <!--logo-->
+      <nav class="menu-desktop">
+        <ul>
+          <li><a href="#">inicio</a></li>
+          <li><a href="#">Especialidades</a></li>
+          <li><a href="#">Sobre</a></li>
+          <li><a href="#">Projeto</a></li>
+        </ul>
+      </nav>
 
-  <h1>Exercícios em JavaScript</h1>
+      <div class="btn-contato">
+        <a href="#">
+          <button>Contato</button>
+        </a>
+      </div><!--btn-contato-->
+    </div> <!--interface-->
+  </header>
 
-  <button onclick="exercicio1()">1. Condicional de Notas</button>
-  <button onclick="exercicio2()">2. Faixa Etária</button>
-  <button onclick="exercicio3()">3. Par e Ímpar com Sinal</button>
-  <button onclick="exercicio4()">4. Adivinhe o Número</button>
-  <button onclick="exercicio5()">5. Sistema de Senha</button>
-  <button onclick="exercicio6()">6. Números de 1 a 10</button>
-  <button onclick="exercicio7()">7. Tabuada do 5</button>
-  <button onclick="exercicio8()">8. Número Aleatório</button>
-  <button onclick="exercicio9()">9. Calculadora Básica</button>
-  <button onclick="exercicio10()">10. Palavra Secreta</button>
-
-  <script>
-    function exercicio1() {
-      let nota = parseFloat(prompt("Digite uma nota de 0 a 10:"));
-      if (nota >= 6) {
-        alert("Aprovado");
-      } else if (nota >= 5 && nota < 6) {
-        alert("Recuperação");
-      } else {
-        alert("Reprovado");
-      }
-    }
-
-    function exercicio2() {
-      let idade = parseInt(prompt("Digite sua idade:"));
-      if (idade < 12) {
-        alert("Criança");
-      } else if (idade < 18) {
-        alert("Adolescente");
-      } else if (idade < 60) {
-        alert("Adulto");
-      } else {
-        alert("Idoso");
-      }
-    }
-
-    function exercicio3() {
-      let numero = parseInt(prompt("Digite um número:"));
-      if (numero % 2 === 0 && numero > 0) {
-        alert("Número par e positivo");
-      } else if (numero % 2 !== 0 && numero < 0) {
-        alert("Número ímpar e negativo");
-      } else {
-        alert("Número não se encaixa nos critérios");
-      }
-    }
-
-    function exercicio4() {
-      let secreto = 7;
-      let tentativa = parseInt(prompt("Adivinhe o número de 1 a 10:"));
-      if (tentativa === secreto) {
-        alert("Acertou!");
-      } else {
-        alert("Errou, tente novamente");
-      }
-    }
-
-    function exercicio5() {
-      const senhaCorreta = "1234";
-      let tentativas = 3;
-      while (tentativas > 0) {
-        let senha = prompt("Digite a senha:");
-        if (senha === senhaCorreta) {
-          alert("Acesso permitido");
-          break;
-        } else {
-          tentativas--;
-          if (tentativas === 0) {
-            alert("Acesso bloqueado por 24 horas");
-          } else {
-            alert(`Senha incorreta. Você tem ${tentativas} tentativa(s) restante(s).`);
-          }
-        }
-      }
-    }
-
-    function exercicio6() {
-      let resultado = "";
-      for (let i = 1; i <= 10; i++) {
-        resultado += i + "\n";
-      }
-      alert(resultado);
-    }
-
-    function exercicio7() {
-      let resultado = "";
-      for (let i = 1; i <= 10; i++) {
-        resultado += `5 x ${i} = ${5 * i}\n`;
-      }
-      alert(resultado);
-    }
-
-    function exercicio8() {
-      let numeroSorteado = Math.floor(Math.random() * 10) + 1;
-      alert(`Número sorteado: ${numeroSorteado}`);
-    }
-
-    function exercicio9() {
-      let num1 = parseFloat(prompt("Digite o primeiro número:"));
-      let num2 = parseFloat(prompt("Digite o segundo número:"));
-      let operacao = prompt("Digite a operação (+, -, *, /):");
-      let resultado;
-
-      switch (operacao) {
-        case "+":
-          resultado = num1 + num2;
-          break;
-        case "-":
-          resultado = num1 - num2;
-          break;
-        case "*":
-          resultado = num1 * num2;
-          break;
-        case "/":
-          resultado = num1 / num2;
-          break;
-        default:
-          alert("Operação inválida");
-          return;
-      }
-
-      alert(`Resultado: ${resultado}`);
-    }
-
-    function exercicio10() {
-      const palavraSecreta = "javascript";
-      let chute = prompt("Adivinhe a palavra secreta:");
-      if (chute.toLowerCase() === palavraSecreta) {
-        alert("Parabéns! Você acertou!");
-      } else {
-        alert("Palavra errada! Tente novamente.");
-      }
-    }
-  </script>
+<main>
+  <section class="topo-do-site">
+    <div class="interface">
+      
+    </div> <!--interface-->
+  </section><!--topo-do-site-->
+</main>
+    
 </body>
 </html>
