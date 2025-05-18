@@ -1,0 +1,105 @@
+fazer o formulario de contato funcionar e terminar
+
+colocr 3 projetos 
+
+colocar o link da url das redes sociais 
+
+https://youtu.be/OGs5bW5l8AE?si=eNU975FDlj-0utHv link pra crir o formulario
+
+https://youtu.be/U7LAy8iRsWc?si=eAOT3plVtmHZS3jW Como criar um formulário e PERSONALIZAR A CAIXA DE TEXTOS (input) com HTML e CSS
+
+hospedar meu site pelo o git ou outra plataforma 
+
+/* ============================= */
+/* PORTFÓLIO */
+/* ============================= 
+
+section.portifolio {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px #ffffff6e;
+}
+
+section.portifolio .interface h2 {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+section.portifolio .interface h2 span {
+    color: #0026ff;
+
+section.portifolio .descricao {
+    color: #ccc;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 40px;
+}
+
+section.portifolio .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.img-port {
+    width: 360px;
+    height: 460px;
+    background-color: #0026ff;
+    background-size: cover;
+    background-position: center;
+    transition: background-position 1s ease;
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.img-port:hover {
+    background-position: bottom;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0026ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+.img-port:hover .overlay {
+    opacity: 1;
+}
+    
+ <!-- Portfólio 
+<section class="portifolio">
+  <div class="interface">
+    <h2 class="titulo">MEU <span>PORTFÓLIO.</span></h2>
+    <p class="descricao">Confira alguns dos meus projetos desenvolvidos com foco em design responsivo e experiência do usuário.</p>
+
+    <div class="flex">
+      <div class="img-port" style="background-image: url('/img/projeto1.jpg');">
+        <div class="overlay">Projeto 1</div>
+      </div>
+      <div class="img-port" style="background-image: url('/img/projeto2.jpg');">
+        <div class="overlay">Projeto 2</div>
+      </div>
+      <div class="img-port" style="background-image: url('/img/projeto3.jpg');">
+        <div class="overlay">Projeto 3</div>
+      </div>
+    </div>
+  </div>
+</section> 
